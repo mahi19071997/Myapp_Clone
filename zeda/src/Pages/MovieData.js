@@ -1,45 +1,97 @@
 import styled from "styled-components"
 
 export const Moviecard=styled.div`
-display:flex;
-justify-content:space-between;
-margin: 10% auto;
-width:70%;
-background-color:#E4ffff;
-padding:0.7%;
-font-family: 'Sans','Helvetica Neue',Helvetica,Arial,sans-serif;`
+display:grid;
+grid-template-columns: 30% 66%;
+margin: 4% auto 0% auto;
+width:90%;
+color:#FFD9D9;
+min-height:90vh;
+background: linear-gradient(to left, black 0%, #8B0000 100%);
+padding:4.5% 5% 0.5% 5% ;
+word-spacing: 4px;
+font-family: 'Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+@media (max-width:810px){
+    grid-template-columns: repeat(1,1fr);
+    
+}
+`
 
 export const Title=styled.div`
-font-size:35px;
-line-height:30px;
+font-size:40px;
+line-height:45px;
 font-Weight:700;
-margin-top:3%;
-
+text-align: left;
+margin:5% ;
+letter-spacing: 2px;
+@media (max-width:810px){
+    margin-Top: 0%;
+}
 `
 
 export const Runtime=styled.div`
 font-size:20px;
 line-height:26px;
-font-Weight:600;
-margin:3% auto;
+font-Weight:500;
+margin:5% ;
 display: flex;
 justify-content:space-between;
 flex-direction:row;
-width: 80%;
+text-align:left;
+width: 75%;
+@media (max-width:1150px) {
+    display: flex;
+    flex-direction:column;
+}
 `
 
 export const Plot=styled.div`
-font-size:15px;
+font-size:18px;
 text-align:left;
 line-height:26px;
-font-Weight:500;
-margin:3% 5%;
-
+font-Weight:550;
+margin:5% ;
 `
-export const Leads=styled.div`
-font-size:13px;
+
+
+export const Imdb=styled.div`
+font-size:18px;
+line-height:26px;
+font-Weight:700;
+margin: 5%;
+padding:2px;
+text-align:left;
+`
+
+export const Mainleads=styled.div`
+font-size:20px;
 line-height:26px;
 font-Weight:500;
-margin:4% 5%;
-
+margin: 5%;
+padding:2px ;
+text-align: left;
 `
+
+export const Posterimg=styled.img`
+padding: 1.5% 5px 1% 5px ;
+width: 100%;
+height: 70%;
+@media (max-width:1000px){
+    margin-top:3%;
+}
+@media (max-width:810px){
+    width: 50%;
+    margin: 3% auto;
+    padding: 1% 5px;
+}
+`
+
+export const Genree=styled.div`
+font-size:20px;
+line-height:26px;
+font-Weight:500;
+margin:5%;
+padding:2px;
+text-align:left;
+`
+

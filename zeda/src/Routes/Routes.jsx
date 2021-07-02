@@ -1,8 +1,10 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 import Navbar from '../Components/Navbar/Navbar'
-import { Dashboard } from '../Pages/Dashboard'
-import { MovieData } from '../Pages/MovieData'
+import { Dashboard } from '../Pages/Dashboard.jsx'
+import { MovieData } from '../Pages/MovieData.jsx'
+import { SearchResults } from '../Pages/SearchResults'
+
 
 export function Routes() {
     return (
@@ -10,11 +12,15 @@ export function Routes() {
             <Navbar/>
             <Switch>
                 <Route exact path={"/"}>
-                    <Dashboard/>
+                  <Dashboard/>  
                 </Route>
 
                 <Route path={"/moviedata/:id"}>
-                    <MovieData/>
+                  <MovieData/>
+                </Route>
+
+                <Route path={"/searchresults"}>
+                  <SearchResults/>
                 </Route>
                 
             </Switch>
