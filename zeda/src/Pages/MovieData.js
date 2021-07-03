@@ -22,6 +22,7 @@ font-size:40px;
 line-height:45px;
 font-Weight:700;
 text-align: left;
+margin-top:0%;
 margin:5% ;
 letter-spacing: 2px;
 @media (max-width:810px){
@@ -76,6 +77,7 @@ export const Posterimg=styled.img`
 padding: 1.5% 5px 1% 5px ;
 width: 100%;
 height: 70%;
+margin-top:10%;
 @media (max-width:1000px){
     margin-top:3%;
 }
