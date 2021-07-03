@@ -12,6 +12,6 @@ const useStyles = makeStyles({
 export const Spinner = () => {
     const classes = useStyles();
     return (
-        <CircularProgress disableShrink size="1.3rem" classes={{root: classes.root}}/>
+        <CircularProgress disableShrink size="7rem" classes={{root: classes.root}}/>
     )
 }

@@ -30,6 +30,9 @@ const useStyles = makeStyles({
   },
   moviedata: {
     marginLeft: "10px",
+    fontSize:"20px",
+    fontWeight:"bold",
+    cursor: "pointer"
   },
   searchicon: {
     color: "black",
@@ -67,6 +70,9 @@ export default function Navbar() {
 
   const handleClick = () => {
     console.log(query);
+    if(query.length===0){
+      return
+    }
     dispatch(stQuery(query));
     dispatch(getData(query));
     history.push("/searchresults");
@@ -76,6 +82,7 @@ export default function Navbar() {
       handleClick();
     }
   };
+
   return (
     <>
       <AppBar className={classes.wrapper}>

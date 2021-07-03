@@ -44,7 +44,7 @@ export const appReducer = (state = initState, { type, payload }) => {
             return {
                 ...state,
                 movie:payload,
-                isLoading: true,
+                isLoading: false,
                 isError: false
             }
         case GET_SINGLE_MOVIEDATA_FAILURE:

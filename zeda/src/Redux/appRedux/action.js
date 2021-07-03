@@ -51,7 +51,7 @@ export const getSingleMoviedataFailure = (data) => {
   }
 }
 
-export const getData=(query,page) =>(dispatch)=>{
+export const getData=(query,page=1) =>(dispatch)=>{
   dispatch(getMoviedataReq())
   Axios.get(`http://www.omdbapi.com/?apikey=b8f79f9e&s=${query}&page=${page}`)
   .then(res=>

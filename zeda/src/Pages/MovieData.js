@@ -94,4 +94,21 @@ margin:5%;
 padding:2px;
 text-align:left;
 `
+export const OnLoading=styled.div`
+padding:18% ;
+font-size:40px;
+color: white;
+font-weight:600;
+text-transform: uppercase;
+background: linear-gradient(to left, black 0%, #8B0000 100%);
 
+`
+
+export const OnError=styled.div`
+padding:18% ;
+font-size:40px;
+color: white;
+font-weight:600;
+text-transform: uppercase;
+background: linear-gradient(to left, black 0%, #8B0000 100%);
+`
