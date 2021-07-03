@@ -47,7 +47,7 @@ export function SearchResults() {
             <Spinner />
           </OnError>
         )}
-        {!loading && movies === undefined && (
+        {!loading &&!error && movies === undefined && (
           <NoData>
             <div>No Data Found</div>
             <img

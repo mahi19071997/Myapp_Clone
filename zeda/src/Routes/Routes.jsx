@@ -3,7 +3,7 @@ import { Route, Switch } from 'react-router-dom'
 import Navbar from '../Components/Navbar/Navbar'
 import { Dashboard } from '../Pages/Dashboard.jsx'
 import { MovieData } from '../Pages/MovieData.jsx'
-import { SearchResults } from '../Pages/SearchResults'
+import { SearchResults } from '../Pages/SearchResults.jsx'
 
 
 export function Routes() {
