@@ -53,7 +53,7 @@ export const getSingleMoviedataFailure = (data) => {
 
 export const getData=(query,page=1) =>(dispatch)=>{
   dispatch(getMoviedataReq())
-  Axios.get(`http://www.omdbapi.com/?apikey=b8f79f9e&s=${query}&page=${page}`)
+  Axios.get(`https://www.omdbapi.com/?apikey=b8f79f9e&s=${query}&page=${page}`)
   .then(res=>
     {setTimeout(()=>{
       dispatch(getMoviedataSuccess(res.data.Search));
@@ -68,7 +68,7 @@ export const getData=(query,page=1) =>(dispatch)=>{
 export const getSingleData=(id) =>(dispatch)=>{
   console.log("mm")
   dispatch(getSingleMoviedataReq())
-  Axios.get(`http://www.omdbapi.com/?i=${id}&apikey=b8f79f9e`)
+  Axios.get(`https://www.omdbapi.com/?i=${id}&apikey=b8f79f9e`)
   .then(res=>
     {setTimeout(()=>{
       dispatch(getSingleMoviedataSuccess(res.data));
